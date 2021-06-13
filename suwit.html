@@ -1,0 +1,95 @@
+<html>
+<style>
+body {
+  background-image: url('image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  font-size: 15px;
+}
+a:link, a:visited {
+  background-color: #00ff4a;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+<body>
+<script>
+ try { 
+    emt = `:'(`
+  alert("Selamat Datang!");
+    var nama = prompt("Isi Nama Kamu Dong :v")
+    if (nama == 'gk' || nama == 'g' || nama == 'gak' || nama == 'ga' || nama == null || nama < 1) {
+      alert("Yaarghh!! Kamu Pelit!!\nYa Udah lh Babay!!")
+    } else {
+      alert("Halo " + nama + " Kamu Cantik Dh >_<")
+      var c = confirm("Mau Gk Jadi Pacar Aku >_<")
+      if (c == true) {
+        alert("Beneran Nih?\nAaaaaa🥰🥳")
+        alert("Kalo Beneran SS Ini Dan Kirim Ke Aku :v")
+        alert("Kyaaaaa >_<")
+        alert("Tekan Lanjut/Oke Ya!!")
+        //alert("Thx Dh Main\nIni Cuma Game Buatan Panji :v")
+        //alert("Hanya Untuk Baper-Baperan / Main² Doang")
+      } else {
+        alert("Yaaah " + emt + " Sad")
+        alert("Ya Udh Gini Aja Dh!\nGimana Kalo Kita Suwit Aja?\nKalo Aku Menang Kita Jadian, Kalo Aku Kalah Terserah Kamu Dh")
+        try {
+    let amoji = ["✊", "✌️", "✋"]
+    let a = Math.floor(Math.random() * amoji.length);
+    alert(`Kuy Main Batu Gunting Kertas!!!\nSilahkan Isi Menggunakan Emoticon ✊/✌️/✋`)
+    var p = prompt("Kamu Milih Apa? ✋✊✌️")
+    if (p == (amoji[0]) || p == (amoji[1]) || p == (amoji[2]) || p == ("kertas") || p.includes("batu") || p.includes("gunting")) {
+    let x = [],
+    y = p;
+    if (p == 'gunting') {
+      y = amoji[1]
+    } else if (p == 'batu') {
+      y = amoji[0]
+    } else if (p == 'kertas') {
+      y = amoji[2]
+    }
+    for (let i = 0; i < 1; i++) {
+	    x[i] = amoji[a];
+	    a++;
+	  }
+    let end;
+    if (x == (amoji[0]) && y == (amoji[2]) || x == (amoji[1]) && y == (amoji[0]) || x == (amoji[2]) && y == (amoji[1]))  {
+      end = `Selamat Kamu Menang\nKarna Kamu Menang Kamu Gk Perlu Jadi Pacar Aku ${emt}`
+    } else if (x == (amoji[0]) && y == (amoji[1]) || x == (amoji[1]) && y == (amoji[2]) || x == (amoji[2]) && y == (amoji[0]))  {
+      end = `Yaaayy Aku Menang 🥳\nMau Gk Mau Kamu Harus Chat Aku Dan Bilang Kita Jadian :v`
+    } else if (y == x) {
+      end = `Heh Kita Seri!!\nRefresh Dong Biar Kita Main Ulang`
+    }
+    
+    
+    alert(`Aku Menggunakan: ${x}`)
+    alert(`Kamu Menggunakan: ${y}`)
+    alert(`Kesimpulan: ${end}`)
+    document.write("<p>Hasilnya "+ end +"</p>")
+    } else {
+      alert('Maen Yg Bener Dong!! Pilih Emoji ✊✌️✋')
+      document.write("<p> Makanya Maen yg Bener </p>")
+    }
+  } catch (err) {
+    alert("Error Cok")
+    console.error(err)
+  }
+      }
+    }
+  } catch (err) {
+    alert("Error!!\nRefresh Browser Kamu!!")
+  }
+  </script>
+  <a href="suwit.html">Refresh</a>
+  </body>
+  </html>
